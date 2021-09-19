@@ -5,15 +5,16 @@ const COLORS = [
     { r: 238, g: 91, b: 51 }, // orange-yellow
     { r: 234, g: 235, b: 71 }, // yellow
     { r: 189, g: 35, b: 43 }, //red
-    { r: 0, g: 0, b: 0 },
-    { r: 255, g: 255, b: 255 },
+    { r: 0, g: 0, b: 0 }, //black
+    { r: 255, g: 255, b: 255 }, //white
     { r: 67, g: 132, b: 129 }, //green
 ];
 
 class App {
     constructor() {
-        this.canvas = document.createElement('canvas');
-        document.body.appendChild(this.canvas);
+        // this.canvas = document.createElement('canvas');
+        this.canvas = document.getElementById("target-circle");
+        // document.body.appendChild(this.canvas);
         this.ctx = this.canvas.getContext('2d');
 
         this.pixelRatio = (window.devicePixelRatio > 1) ? 2 : 1;

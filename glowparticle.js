@@ -2,13 +2,14 @@ const PI2 = Math.PI * 2;
 
 export class GlowParticle {
     constructor(x, y, radius, rgb) {
+        this.speed = 20;
         this.x = x;
         this.y = y;
         this.radius = radius;
         this.rgb = rgb;
 
-        this.vx = Math.random() * 4;
-        this.vy = Math.random() * 4;
+        this.vx = Math.random() * this.speed;
+        this.vy = Math.random() * this.speed;
 
         this.sinValue = Math.random();
     }
