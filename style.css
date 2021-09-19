@@ -34,7 +34,7 @@ img {
     /* text-align: center; */
     padding: 5px 100px;
     text-decoration: none;
-    font-size: 17.5px;
+    font-size: 0.75em;
     line-height: 50px;
     border-radius: 5px;
 }
@@ -143,7 +143,8 @@ img {
    */
 
 .circle-top-2021 {
-    background-image: linear-gradient(to bottom left, #d7603f, transparent), linear-gradient(to top left, #438481, transparent), linear-gradient(to top right, white, transparent), linear-gradient(to bottom right, black, transparent);
+    /* background-image: linear-gradient(to bottom left, #d7603f, transparent), linear-gradient(to top left, #438481, transparent), linear-gradient(to top right, white, transparent), linear-gradient(to bottom right, black, transparent); */
+    z-index: 101;
 }
 
 
@@ -159,6 +160,7 @@ img {
 
 .circle-bottom-2021 {
     background-image: linear-gradient( -60deg, rgba(0, 176, 224, 1), rgba(0, 176, 224, 0));
+    z-index: 100;
 }
 
 
@@ -187,4 +189,56 @@ img {
     /*   right: -18%; */
     margin: auto;
     transition: opacity ease-out 0.5s;
+}
+
+/* I work with your JSFiddle, changing the structure (HTML), adding some CSS, and I get the result that you want.
+
+HTML:
+
+<div id="breakdownWrap" class="wrapper"><div class="text">hi</div>
+<canvas id="reviewScore" width="150" height="150"></canvas>
+</div>
+                            <div id="scoreWrap" class="wrapper"><div class="text">hello</div>
+<canvas id="reviewBreakdown" width="150" height="150"></canvas>
+</div>
+CSS: */
+
+.wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.float-text{
+    color:black;
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    font-size: 1.5em;
+    z-index: 102;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+canvas{
+    position: relative;
+    /* z-index: 1; */
+}
+
+.site-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.site-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
