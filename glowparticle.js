@@ -2,7 +2,7 @@ const PI2 = Math.PI * 2;
 
 export class GlowParticle {
     constructor(x, y, radius, rgb) {
-        this.speed = 20;
+        this.speed = 15;
         this.x = x;
         this.y = y;
         this.radius = radius;
@@ -47,8 +47,10 @@ export class GlowParticle {
             this.y,
             this.radius
         );
+        // option1 without blurring
         // ctx.fillStyle = `rgba(${this.rgb.r}, ${this.rgb.g}, ${this.rgb.b}, 1)`;
 
+        // option2 blurring to get the final result
         g.addColorStop(0, `rgba(${this.rgb.r}, ${this.rgb.g}, ${this.rgb.b}, 1)`);
         g.addColorStop(1, `rgba(${this.rgb.r}, ${this.rgb.g}, ${this.rgb.b}, 0)`);
         ctx.fillStyle = g;

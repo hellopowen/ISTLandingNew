@@ -1,7 +1,7 @@
 /* Style the header  and nav-bar links */
 
 body {
-    font-family: "Saira", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 25px;
 }
 
@@ -78,7 +78,7 @@ img {
     width: 100%;
     height: 0;
     padding-top: 50%;
-    pdding-bottom: 50%;
+    padding-bottom: 50%;
 }
 
 
@@ -101,11 +101,6 @@ img {
     background-position: center;
 }
 
-.main-container {
-    padding: 0 15%;
-    margin: 0 auto;
-}
-
 .center {
     /*   top: 0px;
     bottom: 0px;
@@ -116,6 +111,16 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.main-container {
+    padding: 0 15%;
+    margin: 0 auto;
+}
+
+.main-text {
+    font-size: 2.75em;
+    font-family: "Saira", sans-serif;
 }
 
 
@@ -142,10 +147,11 @@ img {
   }
    */
 
-.circle-top-2021 {
-    /* background-image: linear-gradient(to bottom left, #d7603f, transparent), linear-gradient(to top left, #438481, transparent), linear-gradient(to top right, white, transparent), linear-gradient(to bottom right, black, transparent); */
+
+/* .circle-top-2021 {
+    background-image: linear-gradient(to bottom left, #d7603f, transparent), linear-gradient(to top left, #438481, transparent), linear-gradient(to top right, white, transparent), linear-gradient(to bottom right, black, transparent);
     z-index: 101;
-}
+} */
 
 
 /* .circle-top {
@@ -158,10 +164,11 @@ img {
     z-index: 101;
   } */
 
-.circle-bottom-2021 {
+
+/* .circle-bottom-2021 {
     background-image: linear-gradient( -60deg, rgba(0, 176, 224, 1), rgba(0, 176, 224, 0));
     z-index: 100;
-}
+} */
 
 
 /* .circle-bottom {
@@ -178,8 +185,8 @@ img {
 /* .circle-bottom, */
 
 .circle-top {
-    height: 1000px;
-    width: 1000px;
+    height: 1250px;
+    width: 1250px;
     border-radius: 50%;
     position: relative;
     /*     top: 0px;
@@ -190,6 +197,7 @@ img {
     margin: auto;
     transition: opacity ease-out 0.5s;
 }
+
 
 /* I work with your JSFiddle, changing the structure (HTML), adding some CSS, and I get the result that you want.
 
@@ -203,13 +211,13 @@ HTML:
 </div>
 CSS: */
 
-.wrapper{
+.wrapper {
     position: relative;
     display: inline-block;
 }
 
-.float-text{
-    color:black;
+.float-text {
+    color: black;
     position: absolute;
     text-align: center;
     width: 75%;
@@ -220,7 +228,7 @@ CSS: */
     transform: translate(-50%, -50%);
 }
 
-canvas{
+canvas {
     position: relative;
     /* z-index: 1; */
 }
@@ -242,3 +250,13 @@ canvas{
     align-items: center;
     justify-content: center;
 }
+
+
+/* 
+.logo {
+    width: 125px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+} */
