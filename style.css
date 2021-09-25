@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    padding: 25px;
+    /* padding: 25px; */
     text-align: center;
     /* font-family: 'Saira', sans-serif; */
     overflow: hidden;
@@ -19,31 +19,37 @@ body {
     justify-content: center;
 }
 
-img {
+
+/* img {
     padding: 50px;
     display: block;
     margin: 0 auto;
     max-width: 30%;
     min-width: 300px;
-    /*   max-height:100%; */
+    max-height:100%;
+} */
+
+svg {
+    width: 100%;
+    height: auto;
 }
 
 .nav-bar-item {
     /* float: left; */
     color: black;
     /* text-align: center; */
-    padding: 5px 100px;
+    padding: 20px 120px;
     text-decoration: none;
-    font-size: 0.75em;
+    font-size: 0.85em;
     line-height: 50px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .nav-bar-item:hover {
-    background-color: rgb(204, 59, 19);
+    background-color: rgb(50, 50, 50);
     color: rgb(255, 255, 255);
-    /* font-size: 25px; */
-    /* font-style: extra-bold; */
+    /* font-size: 20px; */
+    font-style: extra-bold;
 }
 
 @media screen and (max-width: 500px) {
@@ -68,9 +74,9 @@ img {
 
 .image-landing {
     display: block;
-    margin: auto;
-    min-width: 1250px;
-    min-height: 1250px;
+    margin: 0 auto;
+    min-width: 1350px;
+    min-height: 1350px;
 }
 
 #landing-description {
@@ -111,6 +117,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 100px;
 }
 
 .main-container {
@@ -119,7 +126,7 @@ img {
 }
 
 .main-text {
-    font-size: 2.75em;
+    font-size: 3em;
     font-family: "Saira", sans-serif;
 }
 
@@ -185,8 +192,8 @@ img {
 /* .circle-bottom, */
 
 .circle-top {
-    height: 1250px;
-    width: 1250px;
+    height: 1500px;
+    width: 1500px;
     border-radius: 50%;
     position: relative;
     /*     top: 0px;

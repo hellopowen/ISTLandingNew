@@ -1,22 +1,22 @@
 let song;
 
 function setup() {
-  song = loadSound("assets/nime_24_8.mp3");
-  // createCanvas(windowWidth, windowHeight);
-  background(255);
+    song = loadSound("assets/nime_24_8.mp3");
+    // createCanvas(windowWidth, windowHeight);
+    background(255);
 
 }
 
 function mousePressed() {
-  if (song.isPlaying()) {
-    // .isPlaying() returns a boolean
-    song.stop();
-    console.log("song play");
-    // background(255, 0, 0);
-  } else {
-    song.play();
-    // background(0, 255, 0);
-  }
+    if (song.isPlaying()) {
+        // .isPlaying() returns a boolean
+        song.stop();
+        console.log("song play");
+        // background(255, 0, 0);
+    } else {
+        song.play();
+        // background(0, 255, 0);
+    }
 }
 
 // $(document).mousemove(function(event) {
