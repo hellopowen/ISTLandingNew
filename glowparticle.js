@@ -2,7 +2,7 @@ const PI2 = Math.PI * 2;
 
 export class GlowParticle {
     constructor(x, y, radius, rgb) {
-        this.speed = 25;
+        this.speed = 33;
         this.x = x;
         this.y = y;
         this.radius = radius;

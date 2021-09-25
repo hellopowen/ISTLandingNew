@@ -75,8 +75,8 @@ svg {
 .image-landing {
     display: block;
     margin: 0 auto;
-    min-width: 1350px;
-    min-height: 1350px;
+    min-width: 1500px;
+    min-height: 1500px;
 }
 
 #landing-description {
@@ -126,7 +126,7 @@ svg {
 }
 
 .main-text {
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: "Saira", sans-serif;
 }
 
